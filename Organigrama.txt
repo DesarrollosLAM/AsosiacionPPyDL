@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organigrama</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+/* ..........INICIO DEL CSS ORGANIGRAMA.......... */
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .contenido {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .volver-btn {
+      background-color: #fb8500;
+      color: #000;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+
+    .volver-btn:hover {
+      background-color: #ff9b28;
+    }
+
+.organigrama-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+/* ..........FIN DEL CSS ORGANIGRAMA.......... */
+
+  </style>
+</head>
+<body>
+
+  <h1>Organigrama</h1>
+
+  <div class="contenido">
+    <p>Aquí podrás visualizar la estructura organizativa de nuestra ONG.</p>
+    <img src="Organigrama.png" alt="Organigrama" class="organigrama-img">
+  </div>
+
+  <a href="index.html" class="volver-btn">Volver al inicio</a>
+
+
+<footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666;">
+  <p><strong>© 2025 | Todos los derechos reservados a LUIS ANGEL MONTERO. Este sitio web fue desarrollado bajo estándares de calidad certificados según la norma ISO 9001:2015.</strong></p>
+</footer>
+
+</body>
+</html>

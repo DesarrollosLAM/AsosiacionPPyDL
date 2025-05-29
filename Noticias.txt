@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .noticias-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto 2rem;
+    }
+
+    .noticia {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .noticia:hover {
+      transform: translateY(-5px);
+    }
+
+    .noticia img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .noticia .contenido {
+      padding: 1rem;
+    }
+
+    .noticia h2 {
+      font-size: 1.1rem;
+      margin: 0 0 0.5rem;
+      color: #333;
+      font-weight: 700;
+    }
+
+    .noticia p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .externa {
+      border: 2px dashed #ccc;
+    }
+
+    .volver-btn {
+      display: inline-block;
+      background-color: #FF4949;
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      margin: 2rem auto;
+      display: block;
+      text-align: center;
+      max-width: 200px;
+    }
+
+    .volver-btn:hover {
+      background-color: #d93c3c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Noticias</h1>
+
+  <div class="noticias-grid">
+    <!-- Noticia interna fija -->
+    <div class="noticia">
+      <img src="NotiInterna01.jpg" alt="Título noticia propia">
+      <div class="contenido">
+        <h2> 🌟 ¡Asamblea General Exitosa! 🌟 1</h2>
+        <p>
+        El 10 de abril de 2025, celebramos con éxito nuestra Asamblea General. Nos complace informar que los tres puntos del orden del día fueron aprobados por unanimidad: la memoria y balance, el aumento de la cuota societaria y la conformación de subcomisiones de         trabajo en las zonas Norte, Centro y Sur de Misiones.
+        Agradecemos profundamente a todos los participantes por su dedicación y apoyo continuo. Su compromiso es fundamental para el crecimiento y la efectividad de nuestra asociación.
+
+        Presidente: Lic. Agustin R. Suárez.</p>
+      </div>
+    </div>
+
+
+    <!-- Noticia externa -->
+    <a href="https://www.diputadosmisiones.gov.ar/nuevo/evento&id=7213?fbclid=IwY2xjawKUM8NleHRuA2FlbQIxMQABHg0n2XaMClJ3e_P07aDFh1R8hK9sTGlZ_D_1WHOLft_clUtaA5JG3Jrp-mQM_aem_BqW_C5kJKCJaJ8mf9T_Jfg&sfnsn=scwspwa" class="noticia externa" target="_blank">
+      <img src="NotiExterna01.jpg" alt="El primer encuentro provincial de profesionales de políticas públicas y desarrollo local se realizó en la Legislatura de Misiones">
+      <div class="contenido">
+        <h2>El primer encuentro provincial de profesionales de políticas públicas y desarrollo local se realizó en la Legislatura de Misiones</h2>
+        <p>Accedé a esta noticia externa publicada en www.diputadosmisiones.gov.ar.</p>
+      </div>
+    </a>
+
+    <!-- Agregá más noticias internas o externas duplicando los bloques anteriores -->
+  </div>
+
+  <a href="index.html" class="volver-btn">Volver al inicio</a>
+
+<footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666;">
+  <p><strong>© 2025 | Todos los derechos reservados a LUIS ANGEL MONTERO. Este sitio web fue desarrollado bajo estándares de calidad certificados según la norma ISO 9001:2015.</strong></p>
+</footer>
+
+</body>
+</html>

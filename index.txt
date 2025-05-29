@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asociación Civil de Profesionales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      height: 100px;
+      width: auto;
+    }
+
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #000;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      background: linear-gradient(145deg, #FF4949, #F7C331, #5BC0EB, #90BE6D, #FB8500);
+      background-size: 400% 400%;
+      color: black;
+      padding: 0.5rem 1.2rem;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: background-position 0.8s ease, box-shadow 0.3s ease;
+      user-select: none;
+      text-align: center;
+    }
+
+    .nav-links a:hover {
+      background-position: right center;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.5);
+    }
+
+    .dropdown {
+      position: relative;
+      width: 100%;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: relative;
+      width: 100%;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .hero {
+      margin-top: 1rem;
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg,
+        rgba(230, 57, 70, 0.95),
+        rgba(255, 183, 3, 0.95),
+        rgba(0, 180, 216, 0.95),
+        rgba(144, 190, 109, 0.95),
+        rgba(251, 133, 0, 0.95)
+      );
+      border-radius: 20px;
+      box-shadow: inset 0 10px 20px rgba(255,255,255,0.35), inset 0 -10px 20px rgba(0,0,0,0.2);
+      font-family: 'Playfair Display', serif;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero h1, .hero p {
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.25);
+      color: #000;
+      font-style: italic;
+      font-weight: 700;
+      margin: 0.2rem 0;
+    }
+
+    .mensaje-bienvenida,
+    .mensaje-objetivos,
+    .mensaje-mision,
+    .mensaje-vision {
+      padding: 1rem 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      text-align: justify;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (min-width: 768px) {
+      .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-links {
+        flex-direction: row;
+        width: auto;
+      }
+
+      .dropdown-content {
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        left: 0;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+        border-radius: 10px;
+      }
+
+      .dropdown-content a {
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo de la ONG" class="logo-img">
+      <span class="logo-text">Asociación Civil de Profesionales</span>
+    </div>
+    <div class="nav-links">
+      <a href="#inicio" class="nav-btn">Inicio</a>
+      <div class="dropdown">
+        <a href="#" class="nav-btn">Nosotros</a>
+        <div class="dropdown-content">
+          <a href="Comision.html">Comisión Directiva</a>
+          <a href="Organigrama.html">Organigrama</a>
+        </div>
+      </div>
+      <a href="Servicios.html" class="nav-btn">Servicios</a>
+      <div class="dropdown">
+        <a href="#" class="nav-btn">Galería</a>
+        <div class="dropdown-content">
+          <a href="Imagenes.html">Imágenes</a>
+          <a href="Videos.html">Videos</a>
+        </div>
+      </div>
+      <a href="Noticias.html" class="nav-btn">Noticias</a>
+      <a href="Documentos.html" class="nav-btn">Documentos</a>
+      <a href="Socios.html" class="nav-btn">Socios</a>
+      <a href="Contacto.html" class="nav-btn">Contacto</a>
+    </div>
+  </nav>
+<div class="main-content">
+
+  <section class="hero">
+    <h1>Gestión de Políticas Públicas y Desarrollo Local en Misiones</h1>
+    <p>Comprometidos con el progreso y bienestar de nuestra comunidad</p>
+  </section>
+
+<section class="mensaje-bienvenida">
+<h2> Bienvenidos a la Asociación Civil de Profesionales en Gestión de Políticas Públicas y Desarrollo Local de Misiones. </h2>
+  <p>
+Somos una comunidad comprometida con el desarrollo integral de nuestra provincia, Misiones. Nuestro objetivo es promover la excelencia en la gestión pública y el desarrollo local, fomentando la colaboración, el aprendizaje continuo y la innovación en cada proyecto que emprendemos.
+Desde nuestra asociación, hemos trabajado para fortalecer la capacitación de nuestros asociados, brindando herramientas y oportunidades que potencien sus habilidades profesionales y personales. Valoramos la ética, la transparencia y el compromiso con el bien común como pilares fundamentales de nuestra labor.
+En colaboración con diversos actores públicos y privados, impulsamos iniciativas que impactan positivamente en nuestra comunidad, contribuyendo al crecimiento sostenible y al bienestar de todos los socios y ciudadanos.
+Únete a nosotros y juntos seguiremos construyendo un futuro mejor para Misiones.
+
+  </p>
+</section>
+
+<section class="mensaje-objetivos">
+<h2> Objetivos. </h2>
+  <p>
+
+En la Asociación Civil de Profesionales en Gestión de Políticas Públicas y Desarrollo Local trabajamos con una visión clara: contribuir al fortalecimiento de las capacidades del Estado y de la sociedad civil para promover un desarrollo justo, equitativo y sostenible.
+Nuestros principales objetivos son:
+•	Impulsar la profesionalización de la gestión pública, promoviendo la formación continua de quienes se desempeñan en áreas vinculadas al diseño, implementación y evaluación de políticas públicas.
+
+•	Fomentar el desarrollo local y regional, a través del apoyo a iniciativas que fortalezcan la participación ciudadana, la planificación estratégica y la articulación entre actores del territorio.
+
+•	Promover la investigación y el análisis de problemáticas sociales, económicas y ambientales, con el fin de generar insumos que contribuyan a la toma de decisiones informadas.
+
+•	Generar espacios de encuentro e intercambio entre profesionales, instituciones y comunidades, para construir redes de colaboración y aprendizaje mutuo.
+
+•	Apoyar proyectos y políticas con enfoque de derechos, inclusión, equidad de género, sostenibilidad ambiental y respeto por la diversidad cultural.
+
+Estos objetivos guían cada una de nuestras acciones y reflejan nuestro compromiso con una gestión pública centrada en el bien común, el desarrollo con identidad y la mejora continua.
+
+  <p>
+
+</section>
+
+
+<section class="mensaje-mision">
+<h2>  MISIÓN  </h2>
+  <p>
+   
+ La  Asociación  Civil  de  Profesionales  en Gestión de  Políticas  Públicas  y  Desarrollo Local 
+ tiene como misión contribuir al fortalecimiento de las capacidades institucionales, sociales y 
+ territoriales mediante el  impulso  de políticas públicas integrales, inclusivas y participativas, 
+ con enfoque en el desarrollo local sostenible. 
+ Desde un compromiso ético, democrático y solidario, promovemos la formación continua, el 
+ acompañamiento profesional, el trabajo articulado con actores estatales y comunitarios, y la 
+ generación de redes de intercambio y cooperación. 
+ Al mismo tiempo, trabajamos activamente por la valorización, reconocimiento y visibilización 
+ de  la  labor  de  quienes  ejercen  la  profesión  de  gestión de políticas  públicas  y  desarrollo 
+ local, entendiendo su rol como estratégico para el diseño, implementación y evaluación de 
+ políticas que transformen positivamente la vida de las comunidades. 
+ Nos  posicionamos  como  una  organización  que  potencia  la  voz,  la  incidencia  y  la 
+ participación de sus miembros en los distintos espacios públicos, académicos y territoriales, 
+ apostando a una gestión pública más justa, transparente y comprometida con las realidades 
+ locales. 
+
+  </p>
+
+</section>
+
+<section class="mensaje-vision">
+<h2>  VISION  </h2>
+
+  <p>
+
+ Aspiramos a  ser  una  organización de referencia en la provincia de Misiones (y proyección 
+ regional)en  la  promoción  y  fortalecimiento  del  rol  de  los  profesionales  en  Gestión  de 
+ Políticas Públicas y Desarrollo Local. 
+ Visualizamos una sociedad en la  que  estos  profesionales sean reconocidos como actores 
+ clave para el diseño de políticas innovadoras, inclusivas y transformadoras, que respondan 
+ a las  necesidades  reales  de la ciudadanía y promuevan el desarrollo con equidad, justicia 
+ social y sustentabilidad. 
+ Nos proponemos consolidar una comunidad profesional activa, capacitada y comprometida 
+ con  el  bien  común,  que  participe  de  manera  protagónica  en  los  procesos  de  toma  de 
+ decisiones,  planificación  territorial,  institucionalidad  democrática  y  construcción  de 
+ ciudadanía. 
+ Queremos ser una asociación que crece junto a sus miembros, que escucha las voces del 
+ territorio, que  transforma  saberes  en acción y que actúa como puente entre la técnica y el 
+ compromiso social, fortaleciendo día a día la dignidad, el reconocimiento y la incidencia de 
+ nuestra profesión.
+  </p>
+</section>
+</main>
+
+</div>
+
+
+<footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666;">
+  <p><strong>© 2025 | Todos los derechos reservados a LUIS ANGEL MONTERO. Este sitio web fue desarrollado bajo estándares de calidad certificados según la norma ISO 9001:2015.</strong></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería de Videos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .galeria {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    video, iframe {
+      width: 100%;
+      max-width: 500px;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .volver-btn {
+      background-color: #fb8500;
+      color: #000;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .volver-btn:hover {
+      background-color: #ff9b28;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galería de Videos</h1>
+
+  <div class="galeria">
+    <!-- Video local -->
+    <video controls>
+      <source src="video1.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+
+    <!-- Video de YouTube -->
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+
+    <!-- Video de Instagram (requiere SDK de Instagram para funcionar bien) -->
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/ENLACE/" data-instgrm-version="14"></blockquote>
+    <script async src="https://www.instagram.com/embed.js"></script>
+  </div>
+
+  <a href="index.html" class="volver-btn">Volver al inicio</a>
+
+  <footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666;">
+    <p><strong>© 2025 | Todos los derechos reservados a LUIS ANGEL MONTERO. Este sitio web fue desarrollado bajo estándares de calidad certificados según la norma ISO 9001:2015.</strong></p>
+  </footer>
+</body>
+</html>

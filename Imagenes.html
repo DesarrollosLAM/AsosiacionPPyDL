@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería de Imágenes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+
+/* ..........INICIO DEL CSS IMAGENES.......... */
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+     .galeria {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 2rem;
+       margin-bottom: 2rem;
+}
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 500px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .volver-btn {
+      background-color: #fb8500;
+      color: #000;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .volver-btn:hover {
+      background-color: #ff9b28;
+    }
+
+/* ..........FIN DEL CSS IMAGENES.......... */
+
+  </style>
+
+</head>
+<body>
+
+  <h1>Galería de Imágenes</h1>
+
+  <div class="galeria">
+    <img src="galeria1.jpg" alt="Actividad 1">
+    <img src="galeria2.jpg" alt="Actividad 2">
+    <img src="galeria3.jpg" alt="Actividad 3">
+    <img src="galeria4.jpg" alt="Actividad 4"> 
+        <!-- Más imágenes aquí -->
+  </div>
+
+  <a href="index.html" class="volver-btn">Volver al inicio</a>
+
+
+
+<footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666;">
+  <p><strong>© 2025 | Todos los derechos reservados a LUIS ANGEL MONTERO. Este sitio web fue desarrollado bajo estándares de calidad certificados según la norma ISO 9001:2015.</strong></p>
+</footer>
+
+</body>
+</html>
+

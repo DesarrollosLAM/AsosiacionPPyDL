@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socios - Pago de Cuota</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .datos-banco {
+      background: #ffffff;
+      display: inline-block;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+      max-width: 400px;
+      margin: 0 auto 2rem;
+    }
+
+    .datos-banco h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .datos-banco p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+    }
+
+    .formulario-comprobante {
+      margin: 2rem auto;
+      background-color: #ffffff;
+      padding: 1.5rem;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .formulario-comprobante label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    .formulario-comprobante input[type="file"] {
+      margin-bottom: 1rem;
+    }
+
+    .formulario-comprobante button {
+      background-color: #5BC0EB;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .formulario-comprobante button:hover {
+      background-color: #3aaad7;
+    }
+
+    .volver-btn {
+      background-color: #fb8500;
+      color: #000;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+
+    .volver-btn:hover {
+      background-color: #ff9b28;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Socios</h1>
+
+  <p>En este lugar el socio podrá abonar su cuota mediante transferencia bancaria.</p>
+
+  <div class="datos-banco">
+    <h2>Datos para el pago</h2>
+    <p><strong>Banco:</strong> Santander</p>
+    <p><strong>Alias:</strong> TECN.LIC.PPYDL</p>
+    <p><strong>CBU:</strong> 0720181920000005563504</p>
+    <p><strong>CUIT:</strong> 30-71573408-3</p>
+    <p><strong>Cuenta:</strong> CC$ 181-055635/0</p>
+    <p><strong>Titular:</strong> A C DE PROF EN GEST DE POL PUB</p>
+  </div>
+
+<a href="https://forms.gle/YyMYDVijWr3u9yZC7" 
+   class="boton-pago" 
+   target="_blank" 
+   style="
+     display: inline-block;
+     background-color: #5BC0EB;
+     color: white;
+     padding: 1rem 2rem;
+     font-size: 1rem;
+     font-weight: bold;
+     text-decoration: none;
+     border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+     transition: background-color 0.3s ease;
+     margin-top: 2rem;">
+   Subir comprobante de pago
+</a>
+
+  <a href="index.html" class="volver-btn">Volver al inicio</a>
+
+  <footer>
+    <p><strong>© 2025 | Todos los derechos reservados a LUIS ANGEL MONTERO. Este sitio web fue desarrollado bajo estándares de calidad certificados según la norma ISO 9001:2015.</strong></p>
+  </footer>
+</body>
+</html>
